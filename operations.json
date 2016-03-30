@@ -1,0 +1,52 @@
+{
+	"operation1":{
+		"name":"operation1"
+		"id":"1"
+	},
+
+	"operation2":{
+		"name":"operation2"
+		"id":"2"
+	},
+
+	"operation3":{
+		"name":"operation3"
+		"id":"3"
+	},
+
+	"operation4":{
+		"name":"operation4"
+		"id":"4"
+	},
+
+	"operation5":{
+		"name":"operation5"
+		"id":"5"
+	},
+
+	"operation6":{
+		"name":"operation6"
+		"id":"6"
+	},
+
+	"operation7":{
+		"name":"operation7"
+		"id":"7"
+	},
+
+	"operation8":{
+		"name":"operation8"
+		"id":"8"
+	},
+
+	"operation9":{
+		"name":"operation9"
+		"id":"9"
+	},
+
+	"operation10":{
+		"name":"operation10"
+		"id":"10"
+	}
+
+}
