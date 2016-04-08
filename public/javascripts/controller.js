@@ -3,7 +3,7 @@ var fs=require('fs');
 
 var operations=fs.readFileSync('../json/operations.json');
 
-fs.readFile('../XML/client.xml', function(err,data){
+fs.readFile('../xml/client.xml', function(err,data){
 	if(err) throw err;
 	p.parseString(data, function(err,result){
 		if (err) {
@@ -17,4 +17,14 @@ fs.readFile('../XML/client.xml', function(err,data){
 		//console.dir(result.conversation.conversationInteractions[0].Interaction[1]['$'].id);
 
 	})
+})
+fs.readdir('../xml',function(err,files){
+	if(err){
+		throw err;
+	}
+   console.log(files)
+})
+ServiceApp=angular.module('ServiceApp');
+ServiceApp.controller('formController',function($scope){
+    
 })
