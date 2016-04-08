@@ -1,0 +1,7 @@
+<conversation name="Exercise"  xmlns="http://www.w3.org/2002/02/wscl10" initialInteraction="Start" finalInteraction="End">
+	<conversationInteractions>
+		<Interaction id="op1"/>
+		<Interaction id="op2"/>
+		<Interaction id="op4"/>
+	</conversationInteractions>
+</conversation>
