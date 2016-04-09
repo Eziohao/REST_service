@@ -3,9 +3,10 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript" src="../public/javascripts/controller.js"></script>
+    <script type="text/javascript" src="/lib/angular.min.js"></script>
+    <script type="text/javascript" src="/javascripts/controller.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="../public/lib/angular.min.js"></script>
+    
   </head>
   <body class="container">
     <h1><%= title %></h1>
@@ -13,7 +14,7 @@
     <div class="servicesChoose" ng-controller="formController">
     	<form class="servicesForm">
     		<select name="servicesSelect" id="servicesList">
-    			<option ng-repeat="service in services" value="{{service.name}}"></option>
+    			<option ng-repeat="service in services track by $index" value="{{service}}">{{service}}</option>
     		</select>
     	</form>
     </div>
