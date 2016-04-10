@@ -15,9 +15,17 @@
     <div class="servicesChoose" ng-controller="formController">
     	<form class="servicesForm">
     		<select name="servicesSelect" id="servicesList">
-    			<option ng-repeat="service in services track by $index" value="{{service}}">{{service}}</option>
+    			<option ng-repeat="service in services track by $index" value="{{service}}" ng-model="{{service}}">{{service}}</option>
     		</select>
+        <button ng-click="getFileName()" >Apply</button>
     	</form>
+      
+      <ul ng-show="showValue">
+        <li ng-repeat="x in xml track by $index" >{{x}}
+          <button ng-click="invokeOp(x)" id="{{x}}" >Invoke {{x}}</button>
+        </li>
+      </ul>
+      <p ng-show="showInvoke">{{op.name}} is invoked at {{op.month}}.{{op.date}}.{{op.year}} {{op.hours}}:{{op.min}}:{{op.sec}}</p>
     </div>
   </body>
 </html>

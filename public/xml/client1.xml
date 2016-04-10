@@ -4,10 +4,6 @@
 		<Interaction id="op2"/>
 		<Interaction id="op3"/>
 		<Interaction id="op4"/>
-		<Interaction id="op5"/>
-		<Interaction id="op6"/>
-		<Interaction id="op7"/>
-		<Interaction id="op8"/>
 		<Interaction id="op9"/>
 		<Interaction id="op10"/>
 	</conversationInteractions>
