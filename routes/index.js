@@ -14,7 +14,7 @@ router.get("/getFile", function(req, res) {
 		if (err) {
 			return err;
 		}
-		console.log(files);
+		//console.log(files);
 		res.send(files)
 	})
 })
@@ -32,7 +32,7 @@ router.post("/getXMLInfo", function(req, res) {
 
 			var xml = new Array(n);
 			for (var i = 0; i < n; i++) {
-				console.dir(result.conversation.conversationInteractions[0].Interaction[i]['$'].id);
+				//console.dir(result.conversation.conversationInteractions[0].Interaction[i]['$'].id);
 				xml[i] = result.conversation.conversationInteractions[0].Interaction[i]['$'].id
 
 			}

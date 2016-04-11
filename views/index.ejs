@@ -14,10 +14,10 @@
     <p>Welcome to <%= title %></p>
     <div class="servicesChoose" ng-controller="formController">
     	<form class="servicesForm">
-    		<select name="servicesSelect" id="servicesList">
-    			<option ng-repeat="service in services track by $index" value="{{service}}" ng-model="{{service}}">{{service}}</option>
+    		<select name="servicesSelect" id="servicesList" ng-model="data.selectElement">
+    			<option ng-repeat="service in services track by $index" value="{{service}}" >{{service}}</option>
     		</select>
-        <button ng-click="getFileName()" >Apply</button>
+        <button ng-click="getFileName(data.selectElement)" >Apply</button>
     	</form>
       
       <ul ng-show="showValue">
