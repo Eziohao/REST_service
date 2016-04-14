@@ -40,6 +40,10 @@ ServiceApp.controller('formController', function($scope, $http) {
 
 		$scope.op = op;
 		$scope.showInvoke = true;
+		$http.post("/getInvoke",op).then(function(result){
+			console.log(result);
+			$scope.xml=result.data;
+		})
 
 	}
 })

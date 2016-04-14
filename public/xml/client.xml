@@ -11,4 +11,32 @@
 		<Interaction id="op9"/>
 		<Interaction id="op10"/>
 	</conversationInteractions>
+<conversationTransitions>
+	<Transition>
+  <SourceInteraction href="op1"/> 
+  <DestinationInteraction href="op2"/> 
+  <SourceInteractionCondition href="M12"/>
+  </Transition>
+   <Transition>
+  <SourceInteraction href="op2"/> 
+  <DestinationInteraction href="op3"/> 
+  <SourceInteractionCondition href="M23"/>
+  </Transition>
+   <Transition>
+  <SourceInteraction href="op3"/> 
+  <DestinationInteraction href="op4"/> 
+  <SourceInteractionCondition href="M34"/>
+  </Transition>
+   <Transition>
+  <SourceInteraction href="op4"/> 
+  <DestinationInteraction href="op9"/> 
+  <SourceInteractionCondition href="M49"/>
+  </Transition>
+   <Transition>
+  <SourceInteraction href="op9"/> 
+  <DestinationInteraction href="op10"/> 
+  <SourceInteractionCondition href="M910"/>
+  </Transition>
+</conversationTransitions>
+</conversation>
 </conversation>
